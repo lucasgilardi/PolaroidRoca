@@ -1,0 +1,45 @@
+/*SOBRE MÍ*/
+/*Banner color - title*/
+.banner-color-1{
+    @include banners(nth($colores, 1), solid 2rem nth($colores, 4));
+
+    @media (max-width: 25em){
+        width: $width-mq;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        width: $width-mq;
+    }
+}
+.banner-title{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: nth($colores, 7);
+    font-size: 3rem;
+    font-weight: 600;
+    
+    @media (max-width: 25em){
+        font-size: 2rem;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        font-size: 2.4rem;
+    }
+}
+.about-me-container{
+    @media (max-width: 25em){
+        width: $width-mq!important;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        width: $width-mq!important;
+    }
+}
+.title-article{
+    text-align: center;
+    margin: 2rem;
+}
+.description-text{
+    color: nth($colores, 5);
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+}

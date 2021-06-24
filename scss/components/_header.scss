@@ -1,0 +1,61 @@
+/*HEADER*/
+
+/*Logo size*/
+
+.logo-header{
+    max-width: 100%;
+    width: 3rem;
+}
+
+/*Navbar settings*/
+
+.navbar{
+    width: $width-general;
+    @media (max-width: 25em){
+        width: $width-mq;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        width: $width-mq;
+    }
+}
+.navbar-nav{
+    text-align: right;
+}
+nav{
+    ul{
+        li{
+            a{
+                color: nth($colores, 1)!important;
+                font-size: 1.2rem;
+                font-weight: 600;
+
+            &:hover{
+                color: nth($colores, 2)!important;
+            }
+            }
+        }
+    }
+}
+.link-active{
+    color: nth($colores, 2)!important;
+}
+.navbar-content{
+    padding: 0!important;
+}
+.navbar-light .navbar-toggler{
+    color: rgb(217 173 160);
+    border-color: rgb(166 139 128);
+    border: solid 0.1rem;
+
+    &:focus{
+        box-shadow: 0 0 0 0.1rem;
+    }
+}
+.nav-link{
+    @media (max-width: 25em){
+        font-size: 1.2rem;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        font-size: 1.5rem;
+    }
+}

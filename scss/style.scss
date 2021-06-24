@@ -1,0 +1,21 @@
+/*Seteos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+//Variables, listas, mixin y mapas
+@import 'base/variables';
+@import 'base/listas';
+@import 'base/mixin';
+@import 'base/maps';
+
+//Partial imports
+@import 'components/header';
+@import 'components/titles';
+@import 'components/home';
+@import 'components/sobremi';
+@import 'components/contacto';
+@import 'components/faq';
+@import 'components/footer';

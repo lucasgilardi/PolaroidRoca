@@ -1,0 +1,23 @@
+//TITLES
+
+@mixin titles ($font-size) {
+    font-size: $font-size;
+    font-weight: 600;
+    color: nth($colores, 3);
+}
+
+@mixin banners($bg-color, $border-r){
+    background-color: $bg-color;
+    height: 12rem;
+    width: $width-general;
+    margin: 1.2rem auto;
+    position: relative;
+    border-right: $border-r;//solid 2rem nth($colores, 3)
+}
+
+@mixin prefijos($propiedad){
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform: $propiedad;
+}

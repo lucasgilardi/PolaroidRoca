@@ -1,0 +1,85 @@
+/*HOME*/
+
+/*Carousel*/
+.carousel{
+    width: $width-general;
+    @media (max-width: 25em){
+        width: $width-mq;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        width: $width-mq;
+    }
+}
+
+/*Products articles*/
+.products-article{
+    width: $width-general;
+    margin: auto;
+    @media (max-width: 25em){
+        width: $width-mq;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        width: $width-mq;
+    }
+}
+
+/*Overlay grid products*/
+.overlay{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: nth($colores, 4);
+    z-index: 1;
+    transform: translate(-0%, -100%);
+
+    @include prefijos(translate(-0%, -100%));
+}
+
+.grid-product:hover .overlay {
+    opacity: 1;
+} 
+.overlay-title{
+    color: nth($colores, 3);
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    
+    @include prefijos(translate(-50%, -50%));
+}
+.overlay-description{
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    text-align: center;
+    color: nth($colores, 7);
+    transform: translate(-50%, -50%);
+
+    @include prefijos(translate(-50%, -50%));
+}
+
+/*Grid - Title/text Mobile - Tablet*/
+.mob-tab-title{
+    color: nth($colores, 3);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+.mob-tab-description{
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}

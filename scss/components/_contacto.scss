@@ -1,0 +1,100 @@
+/*CONTACTO*/
+/*Banner color - title*/
+.banner-color-2{
+    @include banners(nth($colores, 6), solid 2rem nth($colores, 1));
+
+    @media (max-width: 25em){
+        width: $width-mq;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        width: $width-mq;
+    }
+}
+
+/*Grid form*/
+.container-contact {
+    width: $width-general;
+    margin: auto;
+
+    .wrapper {
+        .box {
+            width: 100%;
+            position: relative;
+            padding: 2.5rem;
+
+            input {
+                width: 100%;
+                padding: 0.5rem;
+                border: none;
+                outline: none;
+                border-bottom: solid 0.1rem nth($colores, 5);
+                font-size: 0.8rem;
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-top: 1.5rem;
+            }
+
+            label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 1rem;
+                font-weight: bold;
+                color: nth($colores, 3);
+            }
+
+            textarea {
+                width: 100%;
+                height: 100px;
+                padding: 0.5rem;
+                border: none;
+                outline: none;
+                border-bottom: solid 0.1rem nth($colores, 5);
+                font-size: 0.8rem;
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    @media (max-width: 25em){
+            width: $width-mq;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        width: 90%;
+    }
+}
+.container-contact input[type="submit"]{
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    border: solid 0.15rem nth($colores, 5);
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: nth($colores, 3);
+    font-weight: bold;
+    margin-top: 5rem;
+
+    &:hover{
+        background-color: nth($colores, 5);
+        color: nth($colores, 7);
+        border: solid 0.15rem nth($colores, 5);
+    }
+}
+
+/*Grid contact data*/
+.fas{
+    color: map-get($icons, contact);
+    font-size: map-get($icons, font-size);
+}
+.contact-data{
+    font-weight: 600;
+    color: nth($colores, 3);
+    margin-left: 0.9rem;
+}
+.iframe-map-contact{
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
