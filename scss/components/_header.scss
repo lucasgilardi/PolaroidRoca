@@ -32,12 +32,26 @@ nav{
             &:hover{
                 color: nth($colores, 2)!important;
             }
+
+            @media (max-width: 25em){
+                color: nth($colores, 7)!important;
+            }
+            @media (min-width: 25.0625em) and (max-width: 60em){
+                color: nth($colores, 7)!important;
+            }
             }
         }
     }
 }
 .link-active{
     color: nth($colores, 2)!important;
+
+    @media (max-width: 25em){
+        background-color: #e9afa1;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        background-color: #e9afa1;
+    }
 }
 .navbar-content{
     padding: 0!important;
@@ -51,11 +65,30 @@ nav{
         box-shadow: 0 0 0 0.1rem;
     }
 }
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+
+    @media (max-width: 25em){
+        background-color:nth($colores, 4);
+        margin-top: .5rem;
+    }
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        background-color:nth($colores, 4);
+        margin-top: .5rem;
+    }
+}
+
 .nav-link{
+    
+
     @media (max-width: 25em){
         font-size: 1.2rem;
+        padding: 0.5rem .5rem!important;
     }
     @media (min-width: 25.0625em) and (max-width: 60em){
         font-size: 1.5rem;
+        padding: 0.5rem .5rem!important;
     }
 }
