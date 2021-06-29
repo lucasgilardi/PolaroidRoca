@@ -17,7 +17,7 @@ $mensaje .= "Mensaje: " . $_POST['mes'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
 $para = 'polaroidbycami@hotmail.com'; 
-$asunto = 'Contacto desde el sitio web'
+$asunto = 'Contacto desde el sitio web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
