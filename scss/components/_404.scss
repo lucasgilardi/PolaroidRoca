@@ -1,0 +1,26 @@
+/*ERROR 404*/
+.img-error{
+    max-width: 100%;
+    width: 20rem;
+    display: block;
+    margin: 2rem auto;
+}
+
+.btn-inicio{
+    background-color: #a68b80;
+    padding: .6rem;
+    display: block;
+    width: 14rem;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: .3rem;
+
+    &:hover{
+        background-color: #d9ada0;
+        color: #fff;
+    }
+}
