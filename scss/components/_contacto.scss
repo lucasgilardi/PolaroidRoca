@@ -15,6 +15,7 @@
 .container-contact {
     width: $width-general;
     margin: auto;
+    position: relative;
 
     .wrapper {
         .box {
@@ -97,4 +98,54 @@
     border: 0;
     width: 100%;
     height: 100%;
+}
+
+/*Div mensaje enviado*/
+.div-mensaje-enviado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: nth($colores, 6);
+    box-shadow: -5px 7px 14px -8px rgb(0 0 0 / 71%);
+
+    @media (max-width: 25em){
+        width: 80%;
+    }
+
+    @media (min-width: 25.0625em) and (max-width: 60em){
+        width: 80%;
+    }
+
+    h6{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: nth($colores, 7);
+        padding-top: 1rem;
+    }
+
+    p{
+        color: nth($colores, 7);
+        font-size: 0.9rem;
+
+        @media (max-width: 25em){
+            font-size: 0.8rem;
+        }
+    }
+
+    button{
+        cursor: pointer;
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0.3rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
 }
